@@ -17,13 +17,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18.x.x"
+          node-version: 18
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Check external service
-      run: curl https://this-domain-should-not-exist-999.com
-
-    - name: Run tests
-      run: npm test
+      - name: Run tests
+        run: npm test
