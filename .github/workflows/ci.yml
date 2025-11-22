@@ -22,5 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Check external service
+        run: curl --max-time 5 https://10.255.255.1
+
       - name: Run tests
         run: npm test
