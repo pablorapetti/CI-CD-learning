@@ -23,4 +23,4 @@ jobs:
         run: npm instal
 
       - name: Run tests
-        run: this-command-does-not-exist
+        run: npm test
